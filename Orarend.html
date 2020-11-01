@@ -1,98 +1,156 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <Style>
+    <head>
+        <meta charset="UTF-8">
+        <title>Órarend</title>
+        <style>
+            table {
+                width: 80%;
+                margin: auto;
+            }
     
-        th {
-            background-color:#d4d4d4;
-        }
-        
-        table, th, td {
-            border: 1px solid #c2c2c2;
-            border-collapse: collapse;
-        }         
-        table { 
-            margin-left: auto;
-            margin-right: auto;
-
-        }
-        body {
-            font-size: 30px;
-        }
-        td {
-            background-color:#ededed;
-            width: 2cm;
-            text-align: center;
-            
-            
-        }
-    </Style>
-    <title>Orarend</title>
-</head>
+            caption {
+                font-size: 2.0em;
+                background-color: rgb(190, 190, 190);
+                color: rgb(0, 0, 0);
+                border-radius: 10px;
+                box-shadow: lightgray 9px 12px;
+                width: 80%;
+                margin: 0.5cm auto 1em;
+            }
+    
+            thead {
+                background-color: rgb(155, 155, 155);
+                color: rgb(34, 34, 34);
+            }
+    
+            tbody {
+                background-color: rgb(218, 218, 218);
+                color: rgb(0, 0, 0);
+             
+            }
+    
+            tfoot {
+                background-color: rgb(155, 155, 155);
+                color: rgb(0, 0, 0);
+            }
+    
+            th {
+                font-weight: bolder;
+                width: 11%;
+                height: 1.6em;
+                border: 2px solid rgb(0, 0, 0);
+                border-radius: 8px;
+                background-color: rgb(155, 155, 155);
+                font-size: 20px;
+            }
+    
+            td {
+                height: 1cm;
+                text-align: center;
+                font-style: italic;
+                font-size: 20px ;
+                border: 2px solid rgb(0, 0, 0);
+                border-radius: 6px;
+            }
+        </style>
+    </head>
 <body>
     <table>
         <caption><h2>Órarend</h2></caption>
+     <thead>
         <tr>
-            <td ></td>
-            <th colspan="2">Hétfő</th>
-            <th colspan="2">Kedd</th>
-            <th colspan="2">Szerda</th>
-            <th colspan="2">Csütörtök</th>
+            <th rowspan="2"> </th>
+            <th rowspan="2">Hétfő</th>
+            <th colspan="2" >Kedd</th>
+            <th rowspan="2">Szerda</th>
+            <th rowspan="2">Csütörtök</th>
             <th colspan="2">Pénték</th>
+            <th rowspan="2"> </th>
             
         </tr>
         <tr>
-            <td >1.</td>
-            <td colspan="2">Osztályfőnöki</td>
-            <td >IKT</td>
-            <td >X</td>
-            <td colspan="2">fizika</td>
-            <td colspan="2" rowspan="2">Matematika</td>
+            <th>A.hét</th>
+            <th>B.hét</th>
+            <th>A.hét</th>
+            <th>B.hét</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1.</th>
+            <td>Osztályfőnöki</td>
+            <td>IKT</td>
+            <td>X</td>
+            <td>fizika</td>
+            <td rowspan="2">Matematika</td>
             <td colspan="2">Matematika</td>
+            <th>8:30-9:10</th>
         </tr>
         <tr>
-            <td >2.</td>
-            <td colspan="2" rowspan="2">Történelem</td>
+            <th>2.</th>
+            <td  rowspan="2">Történelem</td>
             <td colspan="2">IKT</td>
-            <td colspan="2">Komplex</td>
+            <td>Komplex</td>
             <td colspan="2">Fizika</td>
+            <th>9:20-10:00</th>
         </tr>
         <tr>
-            <td>3.</td>
+            <th>3.</th>
             <td colspan="2" rowspan="3">InfTáv. I.</td>
-            <td colspan="2">Matematika</td>
-            <td colspan="2">Komplex</td>
+            <td>Matematika</td>
+            <td>Komplex</td>
             <td colspan="2" rowspan="2">Angol</td>
+            <th>10:10-10:50</th>
         </tr>
         <tr>
-            <td>4.</td>
-            <td colspan="2">Angol</td>
-            <td colspan="2">Irodalom</td>
-            <td colspan="2">Magyar</td>
+            <th>4.</th>
+            <td>Angol</td>
+            <td>Irodalom</td>
+            <td>Magyar</td>
+            <th>11:05-11:45</th>
         </tr>
         <tr>
-            <td>5.</td>
-            <td colspan="2">Tesi</td>
-            <td colspan="2">Angol</td>
-            <td colspan="2" rowspan="2">DK</td>
+            <th>5.</th>
+            <td>Tesi</td>
+            <td>Angol</td>
+            <td rowspan="2">DK</td>
             <td colspan="2">Komplex</td>
+            <th>11:55-12:35</th>
         </tr>
         <tr>
-            <td>6.</td>
-            <td colspan="2">Irodalom</td>
+            <th>6.</th>
+            <td>Irodalom</td>
             <td colspan="2" rowspan="2">Prog.</td>
-            <td colspan="2" rowspan="2">Tesi</td>
+            <td rowspan="2">Tesi</td>
             <td colspan="2">Történelem</td>
+            <th>12:45-13:25</th>
         </tr>
         <tr>
-            <td>7.</td>
-            <td colspan="2">Magyar</td>
-            <td colspan="2">Tesi</td>
+            <th>7.</th>
+            <td>Magyar</td>
+            <td>Tesi</td>
             <td>Munkaism.</td>
             <td>X</td>
+            <th>13:30-14:10</th>
         </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th rowspan="2"> </th>
+            <th>Közismereti</th>
+            <th colspan="2">Gyakorlati nap</th>
+            <th>Közismereti</th>
+            <th>Közismereti</th>
+            <th colspan="2">Közismereti</th>
+            <th rowspan="2"> </th>
+        </tr>
+        <tr>
+            <th colspan="7">Mechwart András Gépipari és Informatikai Technikum</th>
+        </tr>
+    </tfoot>
+    </tbody>
+
     </table>
 </body>
 </html>
