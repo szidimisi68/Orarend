@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Órarend</title>
+    <style>
+        table {
+            width: 90%;
+            margin: auto;
+        }
+
+        caption {
+            font-size: 2.5em;
+            background-color: darksalmon;
+            color: maroon;
+            border-radius: 15px;
+            box-shadow: lightgray 9px 12px;
+            width: 60%;
+            margin: 0.5cm auto 1em;
+        }
+
+        thead {
+            background-color: lightgreen;
+            color: darkslategray;
+        }
+
+        tbody {
+            background-color: wheat;
+            color: brown;
+         
+        }
+
+        tfoot {
+            background-color: lightskyblue;
+            color: blue;
+        }
+
+        th {
+            font-weight: bolder;
+            width: 11%;
+            height: 1.6em;
+            border: 2px solid red;
+            border-radius: 10px;
+        }
+
+        td {
+            height: 1cm;
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption><h2>Heti órarend</h2></caption>
+        <thead>
+            <tr>
+                <th rowspan="2"> </th>
+                <th rowspan="2">Hétfő</th>
+                <th colspan="2" >Kedd</th>
+                <th rowspan="2">Szerda</th>
+                <th rowspan="2">Csütörtök</th>
+                <th colspan="2">Pénték</th>
+                <th rowspan="2"> </th>
+                
+            </tr>
+            <tr>
+                <th>A.hét</th>
+                <th>B.hét</th>
+                <th>A.hét</th>
+                <th>B.hét</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1.óra</th>
+                <td>Osztályfőnöki</td>
+                <td>IKT</td>
+                <td> </td>
+                <td>fizika</td>
+                <td rowspan="2">Matematika</td>
+                <td colspan="2">Matematika</td>
+                <th>8:30-9:10</th>
+            </tr>
+            <tr>
+                <th>2.óra</th>
+                <td  rowspan="2">Történelem</td>
+                <td colspan="2">IKT</td>
+                <td>Komplex</td>
+                <td colspan="2">Fizika</td>
+                <th>9:20-10:00</th>
+            </tr>
+            <tr>
+                <th>3.óra</th>
+                <td colspan="2" rowspan="3">InfTáv. I.</td>
+                <td>Matematika</td>
+                <td>Komplex</td>
+                <td colspan="2" rowspan="2">Angol</td>
+                <th>10:10-10:50</th>
+            </tr>
+            <tr>
+                <th>4.óra</th>
+                <td>Angol</td>
+                <td>Irodalom</td>
+                <td>Magyar</td>
+                <th>11:05-11:45</th>
+            </tr>
+            <tr>
+                <th>5.óra</th>
+                <td>Tesi</td>
+                <td>Angol</td>
+                <td rowspan="2">DK</td>
+                <td colspan="2">Komplex</td>
+                <th>11:55-12:35</th>
+            </tr>
+            <tr>
+                <th>6.óra</th>
+                <td>Irodalom</td>
+                <td colspan="2" rowspan="2">Prog.</td>
+                <td rowspan="2">Tesi</td>
+                <td colspan="2">Történelem</td>
+                <th>12:45-13:25</th>
+            </tr>
+            <tr>
+                <th>7.óra</th>
+                <td>Magyar</td>
+                <td>Tesi</td>
+                <td>Munkaism.</td>
+                <td> </td>
+                <th>13:30-14:10</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th rowspan="2"> </th>
+                <th>Közismereti</th>
+                <th colspan="2">Gyakorlati nap</th>
+                <th>Közismereti</th>
+                <th>Közismereti</th>
+                <th colspan="2">Közismereti</th>
+                <th rowspan="2"> </th>
+            </tr>
+            <tr>
+                <th colspan="7">Mechwart András Gépipari és Informatikai Technikum</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
